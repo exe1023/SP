@@ -1,0 +1,11 @@
+all:file_merger_main.cpp
+	g++ file_merger_main.cpp -o file_merger -std=c++11 -O2
+run:file_merger.exe
+	file_merger C:/SP/SP15MP1/test/ex1_1 C:\SP\SP15MP1\test\ex1_2 C:/SP/SP15MP1/test/my1_3
+	file_merger C:\SP\SP15MP1\test\ex2_1 C:\SP\SP15MP1\test\ex2_2 C:\SP\SP15MP1\test\my2_3
+	file_merger C:\SP\SP15MP1\test\ex3_1 C:\SP\SP15MP1\test\ex3_2 C:\SP\SP15MP1\test\my3_3
+	file_merger C:\SP\SP15MP1\test\ex4_1 C:\SP\SP15MP1\test\ex4_2 C:\SP\SP15MP1\test\my4_3
+test_data:test.cpp
+	g++ test.cpp -o test -std=c++11 -O2
+	test C:\SP\SP15MP1\test\myex3_1 C:\SP\SP15MP1\test\myex3_2
+	file_merger C:\SP\SP15MP1\test\myex3_1 C:\SP\SP15MP1\test\myex3_2 C:\SP\SP15MP1\test\myex3_3
